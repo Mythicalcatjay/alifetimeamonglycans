@@ -1,0 +1,131 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+.index-nav {
+  background-color: none;
+  background-size: 100%;
+  border: none;
+  font-family: sans-serif;
+  color: #769ABB;
+  margin: 10px 10px;
+  font-size: 40px;
+  padding: 4px 4px;
+  width: 98.5%;
+  height: 40px;
+  text-align: center;
+}
+    
+ body {
+  background-image: url("website bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: url("cursor/help.png"), help;
+  cursor: url("cursor/wait.gif"), wait;
+  cursor: url("cursor/no-drop.gif"), not-allowed;
+  cursor: url("cursor/text.png"), text;
+  cursor: url("cursor/pointer.gif"), pointer;
+  cursor: url("cursor/auto.png"), auto;
+}
+    
+.button {
+  background-color: #769ABB;
+  border: none;
+  color: #0E1217;
+  padding: 10px 10px;
+  text-align: left;
+  display: inline-block;
+  font-size: 16px;
+  font-family: sans-serif;
+  margin: 4px 4px;
+  cursor: url("cursor/pointer.gif"), pointer;
+}
+
+.button:hover {background-color: #6486A5;}
+
+.disabled {
+  opacity: 0.6;
+  cursor: url("cursor/no-drop.gif"), not-allowed;
+}
+
+/* These are the boxes I was trying ot do for the center. If you can fix them so that they are spaced out that would be nice */
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  height: 650px;
+  margin: 10px 10px;
+  background-color: #32234FB3;
+  border: none;
+  font-family: sans-serif;
+  color: #769ABB;
+  overflow: scroll;
+}
+
+.left {
+  width: 70%;
+  font-size: 20px;
+}
+
+.right {
+  width: 13%;
+}
+
+.directory {
+  background-color: #769ABB;
+  font-family: sans-serif;
+  color: #0E1217;
+  height: 320px;
+  width: 90%;
+}
+
+.updates {
+  background-color: #769ABB;
+  font-family: sans-serif;
+  color: #0E1217;
+  height: 195px;
+  width: 300px;
+  font-size: 16px;
+  padding: 4px 4px;
+}
+
+.inner {
+  background-color: none;
+  font-family: sans-serif;
+  color: #0E1217;
+  height: 195px;
+  width: 445px;
+  font-size: 16px;
+  padding: 4px 4px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 768px) {
+    #content {
+        display: flex;
+        flex-direction: column;
+    }
+    .index-nav {
+        order: 1;
+        height: 100%;
+    }
+    .left {
+        order: 2;
+        width: 100%;
+    }
+    .right {
+        order: 3;
+        width: 100%;
+    }
+    .directory {
+      width: 90%;
+    }
+}
