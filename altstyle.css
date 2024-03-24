@@ -1,0 +1,105 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+.index-nav {
+  background-color: none;
+  background-size: 100%;
+  border: none;
+  font-family: sans-serif;
+  color: #A02727;
+  margin: 10px 10px;
+  font-size: 45px;
+  padding: 4px 4px;
+  width: 98.5%;
+  height: 40px;
+  text-align: center;
+}
+    
+ body {
+  background-image: url("ALAL website bg night mode.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: url("cursor/help.png"), help;
+  cursor: url("cursor/wait.gif"), wait;
+  cursor: url("cursor/no-drop.gif"), not-allowed;
+  cursor: url("cursor/text.png"), text;
+  cursor: url("cursor/pointer.gif"), pointer;
+  cursor: url("cursor/auto.png"), auto;
+}
+    
+.button {
+  background-color: #A02727;
+  border: none;
+  color: #F0D9A7;
+  padding: 10px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  font-family: sans-serif;
+  margin: 4px 4px;
+  cursor: url("cursor/pointer.gif"), pointer;
+}
+
+.button:hover {background-color: #C92664;}
+
+.disabled {
+  opacity: 0.6;
+  cursor: url("cursor/no-drop.gif"), not-allowed;
+}
+
+/* These are the boxes I was trying ot do for the center. If you can fix them so that they are spaced out that would be nice */
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  height: 650px;
+  margin: 10px 10px;
+  background-color: #F1E5CCB3;
+  border: none;
+  font-family: sans-serif;
+  color: #A02727;
+  overflow: scroll;
+}
+
+.left {
+  width: 70%;
+  font-size: 20px;
+}
+
+.right {
+  width: 13%;
+}
+
+.directory {
+  background-color: #A02727;
+  font-family: sans-serif;
+  color: #F0D9A7;
+  height: 300px;
+  width: 90%;
+}
+
+.updates {
+  background-color: #A02727;
+  font-family: sans-serif;
+  color: #F0D9A7;
+  height: 195px;
+  width: 300px;
+  font-size: 16px;
+  padding: 4px 4px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
